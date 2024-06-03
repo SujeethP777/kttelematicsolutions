@@ -67,8 +67,8 @@ class LocationActivity : AppCompatActivity(), OnMapReadyCallback {
 
     private fun setupLocationRequest() {
         locationRequest = LocationRequest.create().apply {
-            interval = 4500 // 4.5 seconds
-            fastestInterval = 4500
+            interval = 900000 // 15 minutes
+            fastestInterval = 900000
             priority = LocationRequest.PRIORITY_HIGH_ACCURACY
         }
     }
